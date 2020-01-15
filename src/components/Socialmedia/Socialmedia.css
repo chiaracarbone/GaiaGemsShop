@@ -1,0 +1,14 @@
+.socialmedia-icon a {
+    margin: 8px;
+    color: #22525e;
+}
+
+
+
+.socialmedia-icons {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: flex-start;
+    margin: 1px
+}

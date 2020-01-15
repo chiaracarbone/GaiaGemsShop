@@ -1,0 +1,21 @@
+.jewelry {
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+.jewelry img {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .jewelry {
+        grid: 1fr / 1fr 1fr;
+    }
+}
+
+@media (max-width: 375px) {
+    .jewelry {
+        grid: 1fr / 1fr;
+    }
+}

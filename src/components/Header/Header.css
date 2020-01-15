@@ -1,0 +1,14 @@
+.header {
+    background-color: white;
+    justify-content: center;
+    display: flex;
+    
+    }
+    
+    
+    .navbar-brand {
+        width: 160px;
+        height:130px;
+        margin: 0px 40px;
+       
+    }
