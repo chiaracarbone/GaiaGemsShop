@@ -8,7 +8,7 @@ import './Jewelry.css';
 export default class Jewelry extends Component {
   render() {
     return (
-      <div className='jewelry'>
+      <div className='jewelry-class'>
         <img alt='necklace' src={testImage}/>
         <img alt='necklace' src={image2}/>
         <img alt='necklace' src={image3}/>

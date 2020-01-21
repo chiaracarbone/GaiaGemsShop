@@ -1,0 +1,59 @@
+.main-navbar {
+    background-color: white;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-style: inherit;
+    grid-gap: 10px;
+    list-style-type: none;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+    cursor: pointer;
+}
+a:hover {
+    color: goldenrod;  
+}
+.navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0px;
+}
+
+.main-navbar a { 
+    color:#22525e;
+}
+
+.nav-hamburger {
+    display: none;
+}
+
+@media screen and (max-width: 786px){
+    .nav-hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .navbar {
+        justify-content: left;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .main-navbar {
+        width: 100%;
+        height: 30px;
+        margin:0px;
+    }
+
+    .nav-about,
+    .nav-shop,
+    .nav-jewelry,
+    .nav-stones,
+    .nav-cart {
+        display: none;
+        margin-top: auto;
+    }
+}

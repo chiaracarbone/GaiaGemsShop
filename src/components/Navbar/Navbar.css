@@ -1,34 +1,12 @@
-.main-navbar{
-    background-color: white;
-    font-size: 16px;
+.navbar-navbar {
+    background-color: #FFFFFF;
+    font-size: 20px;
     font-family: 'Raleway', sans-serif;
     font-style: inherit;
-    display: grid;
     grid-gap: 10px;
-}
-
-.flexbox-navbar{
-    display: flex;
-    flex-direction: row;
     list-style-type: none;
-    justify-content: space-between;
-    padding: 40px 25vw;
-    text-transform: uppercase;
-
-}
-
-.main-navbar a { 
-    color:#22525e;
-}
-
-.hamburger-menu {
-    display: grid;
-    grid-gap: 5px;
-    width: 35px;
-}
-
-.hamburger-menu span {
-    height: 4px;
-    background-color: #27848A;
+    height: 100%;
+    width: auto;
+    padding: 10px 0px 0px 0px;
 }
 

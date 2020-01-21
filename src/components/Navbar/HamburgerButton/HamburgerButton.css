@@ -1,0 +1,21 @@
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 2px;
+    background-color: #27848A;
+    width: 25px;
+    display: flex;
+    margin: 5px;
+}
+
+@media screen and (max-width: 786px){
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+        border: none;
+        background-color: #FFFFFF;
+    }
+}

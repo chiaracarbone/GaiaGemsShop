@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
 export default class Stones extends Component {
+
   render() {
     return (
-      <div>  </div>
+      <div className="stones"> hello from stoness </div>
     );
   }
 }

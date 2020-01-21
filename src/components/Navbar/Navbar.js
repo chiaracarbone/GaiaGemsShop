@@ -1,34 +1,43 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
-import './Navbar.css'
+import React, {Component} from 'react';
 
 import Header from '../Header/Header';
+import Backdrop from './BackDrop/BackDrop';
+import ToolBar from './ToolBar/ToolBar';
+import SideDrawer from './HamburgerButton/SideDrawer';
 
-export default function Navbar(props) {
-  const mobileWidth = 375
+import "./Navbar.css"
+class Navbar extends Component {
+  state = {
+    SideDrawerOpen:false
+  };
 
-  return <>
-    {window.innerWidth <= mobileWidth
-      ? <div className={'hamburger-menu'}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      : null
+
+  hamburgerButtonClickHandler = () => {
+      this.setState((prevState) => {
+        return {SideDrawerOpen: !prevState.SideDrawerOpen};
+      });
+  };
+  backdropClickHandler = () => {
+    this.setState({SideDrawerOpen: false});
+  };
+
+  render() {
+    let sideDrawer;
+    let backdrop;
+
+    if (this.state.SideDrawerOpen){
+      sideDrawer =  <SideDrawer />
+      backdrop = <Backdrop click={this.backdropClickHandler}/>
     }
-
-    <nav className='main-navbar'>
-      <Header />
-
-      <ul className='flexbox-navbar'>
-        <li><Link to='/'>About</Link></li>
-        <li><Link to='/'>Shop</Link></li>
-        <li><Link to='/'>Jewelry</Link></li>
-        <li><Link to='/'>Stones</Link></li>
-        <li><Link to='/'><i className="fas fa-shopping-cart"></i></Link></li>
-
-      </ul>
-    </nav>
-  </>
+    return (
+      <div className="navbar-navbar">
+          <Header />
+          <ToolBar hamburgerClickHandler={this.hamburgerButtonClickHandler} />
+          {sideDrawer}
+          {backdrop}
+      </div>
+    );
+  }
 }
 
+export default Navbar;

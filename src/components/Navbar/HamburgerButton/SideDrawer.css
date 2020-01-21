@@ -1,0 +1,37 @@
+.sidedrawer {
+    height: 100%;
+    background-color: #27848A;
+    position: fixed;
+    width: 45%;
+    max-width: 400px;
+    left: 0px;
+    transition: transform 0.8s ease-out;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    z-index: 200;
+    justify-content: space-around;
+    list-style: none;
+    cursor: pointer;
+}
+
+.sidedrawer a {
+    color: white;
+
+}
+.sidedrawer li {
+    margin: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod;  
+    text-decoration: none;
+}
+
+.sidedrawer ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-decoration: none;
+    list-style: none;
+}

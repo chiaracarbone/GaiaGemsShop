@@ -6,7 +6,7 @@ export default class Shop extends Component {
   render() {
     return (
       <div> 
-          <Jewelry/>
+          <Jewelry />
           <Stones/>
       </div>
     );

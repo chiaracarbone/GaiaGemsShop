@@ -1,21 +1,27 @@
-.jewelry {
+.jewelry-class {
     display: grid;
     grid: 1fr / 1fr 1fr 1fr 1fr;
     grid-gap: 5px;
 }
 
-.jewelry img {
+.jewelry-class img {
     width: 100%;
+
+}
+@media (max-width: 1208px) {
+    .jewelry-class{
+    margin-top: 0px ;
+    }
 }
 
 @media (max-width: 768px) {
-    .jewelry {
+    .jewelry-class {
         grid: 1fr / 1fr 1fr;
     }
 }
 
 @media (max-width: 375px) {
-    .jewelry {
+    .jewelry-class {
         grid: 1fr / 1fr;
     }
 }
