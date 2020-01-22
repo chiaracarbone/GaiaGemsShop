@@ -22,18 +22,16 @@ class Navbar extends Component {
   };
 
   render() {
-    let sideDrawer;
     let backdrop;
 
     if (this.state.SideDrawerOpen){
-      sideDrawer =  <SideDrawer />
       backdrop = <Backdrop click={this.backdropClickHandler}/>
     }
     return (
       <div className="navbar-navbar">
           <Header />
+          <SideDrawer show={this.state.SideDrawerOpen} />
           <ToolBar hamburgerClickHandler={this.hamburgerButtonClickHandler} />
-          {sideDrawer}
           {backdrop}
       </div>
     );
