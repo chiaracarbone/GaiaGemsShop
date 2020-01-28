@@ -4,12 +4,12 @@
   --gold:#7a641a;
   --dark:#000000;
   --mainwhite:#f7f6f5;
+  background-color: white;
 }
 
 body {
   font-family: 'Open Sans Condensed', sans-serif !important;
   background-color: var(--mainwhite) !important;
-  
 }
 
 .text-title {

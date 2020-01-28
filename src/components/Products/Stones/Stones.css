@@ -1,0 +1,63 @@
+.heading-stones{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    font-size: 1.7rem;
+    color: #287e75;
+    padding: 40px 100px 30px 20px;
+    border-top: gray solid 0.5px;
+    margin: 3px 0px 0px 0px;
+    text-transform: uppercase;
+
+}
+
+
+.stones-class  {
+    display: grid;
+    grid: 1fr / 1fr 1fr 1fr 1fr;
+    grid-gap: 5px;
+    text-align: center;
+    background-color: white; 
+}
+.stones-class div {
+    color: #22525e;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.stones-class h5 {
+    color: #DCB042;
+    font-size: 1rem;
+}
+
+
+.stones-class img {
+    width: 100%;
+    padding:2.5%;
+}
+@media (max-width: 1608px) {
+    .stones-class{
+    margin-top: 0px ;
+    }
+    .heading-stones{
+        padding: 40px 100px 40px 80px;
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .stones-class {
+        grid: 1fr / 1fr 1fr;
+    }
+    .heading-stones {
+        padding: 40px 100px 30px 20px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .stones-class {
+        grid: 1fr / 1fr;
+    }
+}

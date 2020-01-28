@@ -10,8 +10,6 @@ class Navbar extends Component {
   state = {
     SideDrawerOpen:false
   };
-
-
   hamburgerButtonClickHandler = () => {
       this.setState((prevState) => {
         return {SideDrawerOpen: !prevState.SideDrawerOpen};
@@ -20,7 +18,7 @@ class Navbar extends Component {
   backdropClickHandler = () => {
     this.setState({SideDrawerOpen: false});
   };
-
+  
   render() {
     let backdrop;
 
