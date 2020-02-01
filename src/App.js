@@ -8,9 +8,12 @@ import Default from './components/Default';
 import About from './components/About/About';
 import Cart from './components/Cart/Cart';
 import Socialmedia from './components/Socialmedia/Socialmedia';
-import Jewelry from './components/Products/Jewelry/Jewelry';
-import Stones from './components/Products/Stones/Stones';
+//import Jewelry from './components/Products/Jewelry/Jewelry';
+//import Stones from './components/Products/Stones/Stones';
 import JewelryProduct from './components/Products/Jewelry/JewelryProduct/JewelryProduct'
+import ProductList from './components/Products/Jewelry/ProductList';
+import StonesProduct from './components/Products/Stones/StonesProduct/StonesProduct'
+import ProductListStones from './components/Products/Stones/ProductListStones';
 class App extends React.Component {
 
   render() {
@@ -22,10 +25,11 @@ class App extends React.Component {
           <Route path='/' exact component={Shop} />
           <Route path='/About' exact component={About} />
           <Route path='/Shop' exact component={Shop} />
-          <Route path='/Jewelry' exact component={Jewelry} />
-          <Route path='/Stones' exact component={Stones}/>
+          <Route path='/Jewelry' exact component={ProductList} />
+          <Route path='/Stones' exact component={ProductListStones}/>
           <Route path='/Cart' exact component={Cart} />
-          <Route path='/Jewelry/JewelryProduct' exact component={JewelryProduct} />
+          <Route path='/JewelryProduct' component={JewelryProduct} />
+          <Route path='/StonesProduct' component={StonesProduct} />
           <Route component={Default} />
         </Switch>
       </React.Fragment>
