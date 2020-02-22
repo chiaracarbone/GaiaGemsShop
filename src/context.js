@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import {jewelryList, detailsJewelry} from './components/Products/Jewelry/JewelryProduct/DetailsOfJewelry';
-import {stonesList, detailsStones} from './components/Products/Stones/StonesProduct/DetailsOfStones';
+import sum from 'hash-sum'
+import {jewelryList} from './components/Products/Jewelry/JewelryProduct/DetailsOfJewelry';
+import {stonesList} from './components/Products/Stones/StonesProduct/DetailsOfStones';
 
 
 const ProductContext = React.createContext();
@@ -8,53 +9,55 @@ const ProductContext = React.createContext();
 
 class ProductProvider extends Component {
     state = {
-        jewelryList: jewelryList,
-        detailsJewelry: detailsJewelry,
-        stonesList: stonesList,
-        detailsStones: detailsStones,
+        products: [],
+        activeProduct: null,
+        cart: []
     };
 
+    componentDidMount() {
+        this.generateProducts();
+    }
 
-    getItem = (id) => {
-        const product = this.state.jewelryList.find(item => item.id === detailsJewelry.id);
-        return product;
-    };
-   
+    generateProducts = () => {
+        const addType = (list, type) => list.map(item => ({...item, type}))
 
-    handleDetail = id => {
-        const product = this.getItem(id);
-        this.setState(() => {
-            return {[detailsJewelry]:product};
-        });
-    };
+        const products = [...addType(jewelryList, 'jewelry'), ...addType(stonesList, 'stone')].map(item => ({
+            ...item,
+            id: sum(Math.random())
+        }))
 
-    getItemJew = (id) => {
-        const product = this.state.stonesList.find(item => item.id === detailsStones.id);
-        return product;
-    };
-   
+        this.setState({products})
+    }
 
-    handleDetailJew = id => {
-        const product = this.getItemJew(id);
-        this.setState(() => {
-            return {[detailsStones]:product};
-        });
-    };
+    setActiveProduct = (id, backTo) => {
+        const product = this.state.products.find(item => item.id === id);
+        const activeProduct = {...product, backTo}
 
-    componentDidMount(){
-        console.log(this.state);
+        this.setState({activeProduct});
     };
 
     addToCart = id => {
-        console.log('hello from addToCart')
+        let tempJewelryList = [...this.state.jewelryList];
+        const index = tempJewelryList.indexOf(this.getItem(id));
+        const product = tempJewelryList[index];
+        product.inCart = true;
+        product.count = 1;
+        const price = product.price;
+        product.total = price;
+        this.setState(() =>{
+            return{jewelryList: tempJewelryList, cart:[...this.state.cart]};
+        },
+             () => {
+                console.log(this.state);
+             }
+        );
     };
   render() {
     return (
       <ProductContext.Provider value={{
           ...this.state,
-          handleDetail:this.handleDetail,
-          handleDetailJew:this.handleDetailJew,
-          addToCart:this.addToCart
+          setActiveProduct: this.setActiveProduct,
+          addToCart: this.addToCart
       }}>
           {this.props.children}
       </ProductContext.Provider>

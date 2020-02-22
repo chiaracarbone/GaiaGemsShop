@@ -1,7 +1,21 @@
-.shop-class .jewelry-heading, 
-.shop-class .heading-stones {
+.shop-class .jewelrys-heading, 
+.shop-class .stones-heading {
     display: none;
 }
+.shop-class .stones-class,
+.shop-class .jewelrys-class {
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    grid-gap: 100px;
+    padding: 0px 100px 100px;
+}
+
+.shop-class img {
+    border-radius: 50%;
+
+}
+
+
 
 .heading-shop {
         font-family: 'Montserrat', sans-serif;
@@ -14,10 +28,20 @@
         text-transform: uppercase;
 }
 
+
+
 @media (max-width: 1608px) {
     .heading-shop {
         padding: 40px 100px 40px 80px;
         font-size: 1.7rem;
+    }
+    .shop-class .jewelrys-class footer,
+    .shop-class .stones-class footer {
+        font-size: 1.8rem;
+    }
+    .shop-class .jewelrys-class footer h5,
+    .shop-class .stones-class footer h5 {
+        font-size: 1.3rem;
     }
 }
 
@@ -25,5 +49,20 @@
     .heading-shop {
         padding: 40px 100px 30px 20px;
         font-size: 1.5rem;
+    }
+    .shop-class .stones-class,
+    .shop-class .jewelrys-class {
+        display: grid;
+        grid: 1fr / 1fr 1fr;
+        grid-gap: 10px;
+        padding: 0px 10px 10px;
+    }
+    .shop-class .jewelrys-class footer,
+    .shop-class .stones-class footer {
+        font-size: 1.2rem;
+    }
+    .shop-class .jewelrys-class footer h5,
+    .shop-class .stones-class footer h5 {
+        font-size: 1rem;
     }
 }

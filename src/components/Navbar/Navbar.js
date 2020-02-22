@@ -11,6 +11,7 @@ class Navbar extends Component {
     SideDrawerOpen:false
   };
   hamburgerButtonClickHandler = () => {
+    console.log('click')
       this.setState((prevState) => {
         return {SideDrawerOpen: !prevState.SideDrawerOpen};
       });
@@ -28,7 +29,7 @@ class Navbar extends Component {
     return (
       <div className="navbar-navbar">
           <Header />
-          <SideDrawer show={this.state.SideDrawerOpen} />
+          <SideDrawer show={this.state.SideDrawerOpen} clickHandler={this.hamburgerButtonClickHandler}/>
           <ToolBar hamburgerClickHandler={this.hamburgerButtonClickHandler} />
           {backdrop}
       </div>

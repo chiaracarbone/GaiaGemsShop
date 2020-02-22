@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
+import './Cart.css';
 
 export default class Cart extends Component {
   render() {
     return (
-      <div> 
-          <h3>Hello from cart</h3> </div>
+      <div className="cart-page"> 
+        <h3 className="cart-heading">Cart</h3>
+      </div>
     );
   }
 }

@@ -1,0 +1,10 @@
+.cart-heading{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    font-size: 1.7rem;
+    color: #287e75;
+    padding: 40px 100px 40px 80px;
+    border-top: gray solid 0.5px;
+    margin: 3px 0px 0px 0px;
+    text-transform: uppercase;
+}
