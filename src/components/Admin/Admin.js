@@ -2,7 +2,12 @@ import firebase from 'firebase/app';
 import "firebase/auth";
 import "firebase/firestore";
 import "firebase/analytics";
-import React, {useState} from 'react'
+
+import React, {useState, useEffect} from 'react';
+import {useAsync} from 'react-async';
+import { useForm } from 'react-hook-form';
+
+import './Admin.css';
 
 const firebaseConfig = {
     apiKey: "AIzaSyDhYge-QWZNyjH1VvpwFoHKoMAkK5S5RF8",
@@ -19,29 +24,59 @@ const app = firebase.initializeApp(firebaseConfig);
 
 const db = firebase.firestore();
 
+async function getProducts() {
+    return db.collection('products').onSnapshot(({docs}) => docs.map(doc => doc.data()))
+}
 
+function addProduct([{name, description, price}]) {
+    return db.collection('products').add({name, description, price})
+}
 
 function Admin() {
-    const [text, set] = useState('')
+    const [products, setProducts] = useState([])
 
-    async function addText() {
-        const docRef = await db.collection("users").add({
-            first: "Chiara",
-            last: "Carbone",
-            says: text,
-            born: 1997
-        })
-
-        console.log(docRef)
-    }
-
+    useEffect(() => {
+        db.collection('products').onSnapshot(({docs}) => setProducts(docs.map(doc => doc.data())))
+    }, [])
+    
+    console.log('render')
     return (
-        <div>
-            <input value={text} onChange={e => set(e.target.value)}/>
+        <div className={'Admin'}>
+            <div className={'Admin__section'}>
+                <AddCard />
 
-            <button onClick={addText}>Add shit to the database :)</button>
+                {products.map(product => <Product key={product.id} {...product}/>)}
+            </div>
         </div>
     )
 }
+
+function Product({name, description, price}) {
+    return <div>
+        {name}
+        {description}
+        {price}
+    </div>
+}
+
+function AddCard() {
+    const addProductAsync = useAsync({deferFn: addProduct})
+    const { register, handleSubmit, watch, errors } = useForm()
+
+    useEffect(() => {
+        console.log('added', addProductAsync.data)
+    }, [addProductAsync.data])
+
+    return <div className={'AddCard'}>
+        <input name='name' type='text' ref={register({required: true})} />
+
+        <input name='description' type='text' ref={register({required: true, minLength: 12})} />
+
+        <input name='price' type='number' ref={register({required: true, min: 0, max: 999})} />
+
+        <button onClick={handleSubmit(addProductAsync.run)}>Add product</button>
+    </div>
+}
+
 
 export default Admin

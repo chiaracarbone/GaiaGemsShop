@@ -1,0 +1,17 @@
+.Admin {
+    display: grid;
+}
+
+.Admin__section {
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.AddCard {
+    display: grid;
+    width: 200px;
+    height: 100%;
+    padding: 12px;
+}
