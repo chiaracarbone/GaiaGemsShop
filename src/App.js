@@ -11,9 +11,11 @@ import Socialmedia from './components/Socialmedia/Socialmedia';
 import Jewelrys from './components/Products/Jewelry/Jewelrys';
 import Product from './components/Products/Product'
 import Stones from './components/Products/Stones/Stones';
+import Admin from './components/Admin/Admin'
 class App extends React.Component {
 
   render() {
+    
     return (
       <React.Fragment>
         <Socialmedia></Socialmedia>
@@ -26,6 +28,7 @@ class App extends React.Component {
           <Route path='/Stones' exact component={Stones}/>
           <Route path='/Cart' exact component={Cart} />
           <Route path='/Product' exact component={Product} />
+          <Route path='/Admin' exact component={Admin} />
           <Route component={Default} />
         </Switch>
       </React.Fragment>

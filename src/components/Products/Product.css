@@ -10,7 +10,7 @@
 
 .Product h2 {
     font-size: 2.2rem;
-    padding: 100px 30px 0px 30px;
+    padding: 50px 30px 0px 30px;
     text-align: center;
 }
 
@@ -19,7 +19,7 @@
     height:45%;
     display: flex;
     justify-content: left;
-    padding: 100px 40px;
+    padding: 50px 40px;
 }
 
 .Product-box {
@@ -42,6 +42,26 @@
     border-color: #22525e;
     color: #22525e;
     border-style: solid;
+}
+
+.Product-buttons {
+    justify-content: center;
+    display: flex;
+}
+
+.Product-buttons button:hover {
+    background-color: lightseagreen;
+}
+
+.Product-cart{
+    display: flex;
+}
+
+.inc,
+.dec {
+    width: 25px;
+    border: none;
+    background-color: white;
 }
 
 @media screen and (max-width: 768px){
@@ -70,5 +90,10 @@
     .Product h2 {
         font-size: 1.5rem;
         padding: 5px;
+    }
+
+    .Product-buttons button {
+        padding: 6px;
+        margin: 6px;
     }
 }

@@ -2,13 +2,12 @@ import React, {Component} from 'react';
 
 import Header from '../Header/Header';
 import Backdrop from './BackDrop/BackDrop';
-import ToolBar from './ToolBar/ToolBar';
 import SideDrawer from './HamburgerButton/SideDrawer';
 
 import "./Navbar.css"
 class Navbar extends Component {
   state = {
-    SideDrawerOpen:false
+    SideDrawerOpen: false
   };
   hamburgerButtonClickHandler = () => {
     console.log('click')
@@ -29,9 +28,8 @@ class Navbar extends Component {
     return (
       <div className="navbar-navbar">
           <Header />
-          <SideDrawer show={this.state.SideDrawerOpen} clickHandler={this.hamburgerButtonClickHandler}/>
-          <ToolBar hamburgerClickHandler={this.hamburgerButtonClickHandler} />
-          {backdrop}
+          <SideDrawer show={this.state.SideDrawerOpen} hamburgerClickHandler={this.hamburgerButtonClickHandler}/>
+         {backdrop}
       </div>
     );
   }

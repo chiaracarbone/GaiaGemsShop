@@ -30,7 +30,7 @@ function Jewelry({image, name, price, onClick}) {
   return <div onClick={onClick}>             
     <Link to='/Product'>
     <img alt='necklace' src={image} />
-    <footer>{name}<h5>{price}</h5></footer>
+    <footer>{name}<h5>{price}€</h5></footer>
     </Link> 
   </div>
 }

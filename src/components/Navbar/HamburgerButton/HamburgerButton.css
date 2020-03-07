@@ -1,7 +1,11 @@
 .hamburger-menu {
-    display: none;
     cursor: pointer;
+    background-color: white;
+    border: none;
 
+}
+button:focus {
+    outline: white;
 }
 
 .hamburger-menu span {

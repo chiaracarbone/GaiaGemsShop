@@ -2,9 +2,8 @@ export const stonesList = [
     {
         id: 1,
         name: "Labradorite",
-        price: "5€/piece",
+        price: 5,
         image: 'img/stones001.jpg',
-        inCart: true,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -13,9 +12,8 @@ export const stonesList = [
     {
         id: 2,
         name: "Chryscolla",
-        price: "2€/piece",
+        price: 2,
         image: 'img/stones002.jpg',
-        inCart: true,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -24,9 +22,8 @@ export const stonesList = [
     {
         id: 3,
         name: "Turquoise",
-        price: "2.50€/piece",
+        price: 2.50 ,
         image: 'img/stones003.jpg',
-        inCart: true,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -35,9 +32,8 @@ export const stonesList = [
     {
         id: 4,
         name: "Amethyst",
-        price: "2€/piece",
+        price: 4,
         image: 'img/stones004.jpg',
-        inCart: true,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -46,9 +42,8 @@ export const stonesList = [
     {
         id: 5,
         name: "Malachite",
-        price: "3€/piece",
+        price: 3,
         image: 'img/stones005.jpg',
-        inCart: true,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -57,9 +52,8 @@ export const stonesList = [
     {
         id: 6,
         name: "Humatite",
-        price: "3.50€/piece",
+        price: 3.50,
         image: 'img/stones006.jpg',
-        inCart: true,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    

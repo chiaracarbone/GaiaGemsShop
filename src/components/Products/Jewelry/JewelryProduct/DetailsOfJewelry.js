@@ -2,11 +2,8 @@ export const jewelryList = [
     {
         id: 1,
         name: "Macrame Necklace 'Zara'",
-        price: "22€",
+        price: 22,
         image: 'img/001.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info: `Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. `
             +
@@ -16,11 +13,8 @@ export const jewelryList = [
     {
         id: 2,
         name: "Macrame Earrings 'Liliane'",
-        price: "12€",
+        price: 12,
         image: 'img/002.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -29,11 +23,8 @@ export const jewelryList = [
     {
         id: 3,
         name: "Macrame Necklace 'Kali'",
-        price: "25€",
+        price: 25,
         image: 'img/003.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -42,11 +33,8 @@ export const jewelryList = [
     {
         id: 4,
         name: "Macrame Earings 'Sita'",
-        price: "18€",
+        price: 18,
         image: 'img/004.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -55,11 +43,8 @@ export const jewelryList = [
     {
         id: 5,
         name: "Macrame Necklace 'Parvati'",
-        price: "20€",
+        price: 20,
         image: 'img/005.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -68,11 +53,8 @@ export const jewelryList = [
     {
         id: 6,
         name: "Macrame Earrings'Freya'",
-        price: "12€",
+        price: 12,
         image: 'img/006.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -81,11 +63,8 @@ export const jewelryList = [
     {
         id: 7,
         name: "Macrame Necklace 'Sol'",
-        price: "15€",
+        price: 15,
         image: 'img/007.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    
@@ -94,11 +73,8 @@ export const jewelryList = [
     {
         id: 8,
         name: "Macrame Necklace 'Durge'",
-        price: "18€",
+        price: 18,
         image: 'img/008.jpg',
-        inCart: true,
-        count: 0,
-        total: 0,
         info:`Lorem ipsum dolor sit amet, per ad tale at partem accusata petentium, nibh abhorreant no mea. Reque etiam instructior eam an. Vis vide wisi docendi ea, velit putent convenire te eam.
             Sed ne elitr intellegat, falli inimicus suavitate ex eos. 
             Id est habeo ludus disputationi, adolescens Sumo dolore volumus eu nec, debet aliquip expetendis vix et    

@@ -1,47 +1,95 @@
-.sidedrawer {
-    height: 100%;
-    background-color: #27848A;
-    position: absolute;
-    width: 45%;
-    max-width: 400px;
-    left: 0px;
-    transition: transform 0.8s ease-out;
+.sidedrawer ul {
+    background-color: white;
     font-size: 20px;
     font-family: 'Raleway', sans-serif;
+    font-style: inherit;
+    grid-gap: 10px;
+    display: flex;
+    width: 90%;
+    height: 40px;
     z-index: 200;
-    justify-content: space-around;
-    list-style: none;
     cursor: pointer;
-    transform: translateX(-100%);
+    flex-direction: row;
+    justify-content: space-around;
     transition: transform 0.5s ease-in-out;
-    margin-top: 30px;
-    text-transform: uppercase;
-
-}
-.sidedrawer.open {
-    transform: translateX(0);
-    margin-top: 30px;
-
+    transform: translateX(-100%);
 }
 
-.sidedrawer a {
-    color: white;
-
+.sidedrawer.open ul {
+    transform: translateX(5%);
 }
+.nav-hamburger{
+    display: block;
+    position: absolute;
+    border: none;
+}
+
 .sidedrawer li {
-    margin: 30px;
-    text-decoration: none;
+    list-style: none;
 }
-
 a:hover {
     color: goldenrod;  
-    text-decoration: none;
 }
 
-.sidedrawer ul {
+.sidedrawer a { 
+    color:#22525e;
+    text-transform: uppercase;
+}
+
+.sidedrawer {
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-decoration: none;
-    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 20px ;
+}
+
+@media screen and (max-width: 786px) {
+
+    .sidedrawer ul{
+        height: 300px;
+        background-color: #22525e;
+        position: absolute;
+        width: 100%;
+        opacity: 0.9;
+        left: 0px;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+        list-style: none;
+        cursor: pointer;
+        transform: translateX(-100%);
+        transition: transform 0.5s ease-in-out;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .sidedrawer.open ul {
+        transform: translateX(0%);
+
+    }
+
+
+    .sidedrawer li {
+        text-decoration: none;
+        padding: 30px;
+        float: left;
+        display: block;
+        margin: -10px;
+    }
+    .sidedrawer  a {
+        color: white;
+    }
+
+    a:hover {
+        color: goldenrod;  
+        text-decoration: none;
+    }
+    .nav-hamburger{
+        display: block;
+        position: relative;
+        border: none;
+    }
+
 }

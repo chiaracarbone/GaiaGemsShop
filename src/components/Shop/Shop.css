@@ -5,8 +5,8 @@
 .shop-class .stones-class,
 .shop-class .jewelrys-class {
     display: grid;
-    grid: 1fr / 1fr 1fr;
-    grid-gap: 100px;
+    grid: 1fr / 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
     padding: 0px 100px 100px;
 }
 
@@ -37,11 +37,11 @@
     }
     .shop-class .jewelrys-class footer,
     .shop-class .stones-class footer {
-        font-size: 1.8rem;
+        font-size: 1rem;
     }
     .shop-class .jewelrys-class footer h5,
     .shop-class .stones-class footer h5 {
-        font-size: 1.3rem;
+        font-size: 0.9rem;
     }
 }
 
@@ -53,16 +53,16 @@
     .shop-class .stones-class,
     .shop-class .jewelrys-class {
         display: grid;
-        grid: 1fr / 1fr 1fr;
+        grid: 1fr / 1fr 1fr 1fr;
         grid-gap: 10px;
         padding: 0px 10px 10px;
     }
     .shop-class .jewelrys-class footer,
     .shop-class .stones-class footer {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
     .shop-class .jewelrys-class footer h5,
     .shop-class .stones-class footer h5 {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
