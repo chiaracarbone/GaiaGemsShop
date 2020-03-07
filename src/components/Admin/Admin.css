@@ -11,7 +11,11 @@
 
 .AddCard {
     display: grid;
-    width: 200px;
+    width: 280px;
     height: 100%;
     padding: 12px;
+}
+
+.AddCard__image {
+    width: 100%;
 }
