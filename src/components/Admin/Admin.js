@@ -28,15 +28,10 @@ const db = firebase.firestore();
 const storage = firebase.storage().ref();
 
 async function addProduct([{name, description, price, image}]) {
-    console.log(image)
     const docRef = await db.collection('products').add({name, description, price})
-    console.log('docRef id: ', docRef.id)
     const productImageRef = await storage.child(`productImages/${docRef.id}`)
-    console.log('image ref: ', productImageRef)
     const addedImage = await productImageRef.put(image[0])
-    console.log('added image: ', addedImage)
     const imageUrl = await addedImage.ref.getDownloadURL()
-    console.log('added url: ', imageUrl)
 
     const docRefWithImage = await docRef.set({imageUrl})
 
@@ -64,6 +59,7 @@ function Admin() {
 function Product({name, description, price, imageUrl}) {
     return <div>
         {imageUrl && <img src={imageUrl} style={{width: '200px'}} alt={'product'}/>}
+        
         <span>
             {name}
         </span>
@@ -75,7 +71,6 @@ function Product({name, description, price, imageUrl}) {
         <span>
             {price}
         </span>
-
     </div>
 }
 
